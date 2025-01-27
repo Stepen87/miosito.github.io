@@ -5,16 +5,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+    <title>Griglia di Card</title>
     <style>
         body {
-            margin: 0; /* Rimuove il margine predefinito del body */
-            height: 100vh; /* Assicura che il body copra l'intera altezza della finestra */
-            background: linear-gradient(to bottom, #1e90ff, #87ceeb); /* Gradiente del cielo */
+            margin: 0;
+            height: 100vh;
+            background: linear-gradient(to bottom, #1e90ff, #87ceeb);
             display: flex;
             justify-content: center;
             align-items: center;
-            
+            flex-direction: column;
         }
 
         h1 {
@@ -22,13 +22,27 @@
             text-align: center;
         }
 
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            width: 90%;
+            max-width: 1200px;
+        }
+
         .card {
-            margin: auto;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            width: 100px;
-            height: 70px;
             text-align: center;
-            font-family: arial;
+            font-family: Arial, sans-serif;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: white;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
         }
 
         .title {
@@ -59,33 +73,175 @@
         a:hover {
             opacity: 0.7;
         }
+
+        .social-icons {
+            margin: 24px 0;
+        }
     </style>
 </head>
 
 <body>
     <h1>Benvenuto</h1>
-    
-    <div class="card">
-        <img src="foto.jpg" alt="John" style="width:50%">
-        <h1>Progetto</h1>
-        <p class="title">Foto di KATRIN  BOLOVTSOVA</p>
-        <p>Harvard University</p>
-        <div style="margin: 24px 0;">
-            <a href="#"><i class="fa fa-dribbble"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-linkedin"></i></a>
-            <a href="#"><i class="fa fa-facebook"></i></a>
+
+    <div class="grid-container">
+        <!-- Genera 10 card -->
+        <div class="card">
+            <img src="foto.jpg" alt="Foto" />
+            <h1>Progetto 1</h1>
+            <p class="title">Foto di KATRIN BOLOVTSOVA</p>
+            <p>Harvard University</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa fa-dribbble"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+            </div>
+            <p><button>Contact</button></p>
         </div>
-        <p><button>Contact</button></p>
+        <!-- Copia la card altre 9 volte -->
+        <div class="card">
+            <img src="foto.jpg" alt="Foto" />
+            <h1>Progetto 2</h1>
+            <p class="title">Foto di KATRIN BOLOVTSOVA</p>
+            <p>Harvard University</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa fa-dribbble"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+            </div>
+            <p><button>Contact</button></p>
+        </div>
+        <!-- Ripeti altre 8 card -->
+        <div class="card">
+            <img src="foto.jpg" alt="Foto" />
+            <h1>Progetto 3</h1>
+            <p class="title">Foto di KATRIN BOLOVTSOVA</p>
+            <p>Harvard University</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa fa-dribbble"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+            </div>
+            <p><button>Contact</button></p>
+        </div>
+        <div class="card">
+            <img src="foto.jpg" alt="Foto" />
+            <h1>Progetto 3</h1>
+            <p class="title">Foto di KATRIN BOLOVTSOVA</p>
+            <p>Harvard University</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa fa-dribbble"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+            </div>
+            <p><button>Contact</button></p>
+        </div>
+        <div class="card">
+            <img src="foto.jpg" alt="Foto" />
+            <h1>Progetto 3</h1>
+            <p class="title">Foto di KATRIN BOLOVTSOVA</p>
+            <p>Harvard University</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa fa-dribbble"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+            </div>
+            <p><button>Contact</button></p>
+        </div>
+        <div class="card">
+            <img src="foto.jpg" alt="Foto" />
+            <h1>Progetto 3</h1>
+            <p class="title">Foto di KATRIN BOLOVTSOVA</p>
+            <p>Harvard University</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa fa-dribbble"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+            </div>
+            <p><button>Contact</button></p>
+        </div>
+        <div class="card">
+            <img src="foto.jpg" alt="Foto" />
+            <h1>Progetto 3</h1>
+            <p class="title">Foto di KATRIN BOLOVTSOVA</p>
+            <p>Harvard University</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa fa-dribbble"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+            </div>
+            <p><button>Contact</button></p>
+        </div>
+        <div class="card">
+            <img src="foto.jpg" alt="Foto" />
+            <h1>Progetto 3</h1>
+            <p class="title">Foto di KATRIN BOLOVTSOVA</p>
+            <p>Harvard University</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa fa-dribbble"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+            </div>
+            <p><button>Contact</button></p>
+        </div>
+        <div class="card">
+            <img src="foto.jpg" alt="Foto" />
+            <h1>Progetto 3</h1>
+            <p class="title">Foto di KATRIN BOLOVTSOVA</p>
+            <p>Harvard University</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa fa-dribbble"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+            </div>
+            <p><button>Contact</button></p>
+        </div>
+        <div class="card">
+            <img src="foto.jpg" alt="Foto" />
+            <h1>Progetto 3</h1>
+            <p class="title">Foto di KATRIN BOLOVTSOVA</p>
+            <p>Harvard University</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa fa-dribbble"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+            </div>
+            <p><button>Contact</button></p>
+        </div>
+        <div class="card">
+            <img src="foto.jpg" alt="Foto" />
+            <h1>Progetto 3</h1>
+            <p class="title">Foto di KATRIN BOLOVTSOVA</p>
+            <p>Harvard University</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa fa-dribbble"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+            </div>
+            <p><button>Contact</button></p>
+        </div>
+
     </div>
+
+    <!-- Contatore -->
     <div id="sfcc5rq6ajhtup6kgqswjsac1la9zcdg436"></div>
     <script type="text/javascript"
         src="https://counter6.optistats.ovh/private/counter.js?c=c5rq6ajhtup6kgqswjsac1la9zcdg436&down=async"
         async></script>
-    <noscript><a href="https://www.freecounterstat.com" title="website counters"><img
+    <noscript>
+        <a href="https://www.freecounterstat.com" title="website counters"><img
                 src="https://counter6.optistats.ovh/private/freecounterstat.php?c=c5rq6ajhtup6kgqswjsac1la9zcdg436"
-                border="0" title="website counters" alt="website counters">
-        </a>
+                border="0" title="website counters" alt="website counters"></a>
     </noscript>
 </body>
 
